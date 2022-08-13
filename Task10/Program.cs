@@ -9,9 +9,11 @@ int number = Convert.ToInt32(Console.ReadLine());
 
 int RemoveSecond(int num)
 {
-    int number1 = num / 100; // первая цифра
-    int number2 = num % 10; // последняя цифра
-    int nov = (num - (number1 * 100 + number2))/10;
+    // int number1 = num / 100; // первая цифра
+    // int number2 = num % 10; // последняя цифра
+    // int nov = (num - (number1 * 100 + number2))/10;
+
+    int nov = num / 10 % 10;
     return nov;
 }
 int result = RemoveSecond(number);
